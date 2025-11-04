@@ -43,6 +43,10 @@ a {
     background: #E2ECF5;
 }
 
+.bg-main-2 {
+    background: #EFF5FF;
+}
+
 .bg-corp {
     background: #12305D;
 }
@@ -260,6 +264,126 @@ footer {
 .news-category {
     top: 10px;
     right: 10px;
+}
+
+.range-card {
+    padding: 16px
+}
+
+.range-card .form-control {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #cfe0ff
+}
+
+.range-card .form-control:focus {
+    box-shadow: 0 0 0 3px rgba(38, 90, 170, .15);
+    border-color: #9fc0ff
+}
+
+.noUi-target {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    padding: 12px 0
+}
+
+.noUi-base,
+.noUi-connects {
+    border-radius: 999px;
+    overflow: visible
+}
+
+.noUi-connects {
+    background: #b0bed1;
+    height: 4px
+}
+
+.noUi-connect {
+    background: #183f7a;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 35px;
+    height: 22px;
+    right: -14px;
+    top: -12px;
+    border-radius: 6px;
+    background: #0f2f5a;
+    border: none;
+    box-shadow: none;
+    cursor: grab
+}
+
+.noUi-horizontal .noUi-handle:active {
+    cursor: grabbing
+}
+
+.noUi-handle:before,
+.noUi-handle:after {
+    display: none
+}
+
+.noUi-handle::after {
+    content: "\F284 \F285";
+    font-family: 'bootstrap-icons';
+    position: absolute;
+    inset: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1;
+    pointer-events: none;
+    height: unset;
+    width: unset;
+    background: unset;
+}
+
+.noUi-tooltip {
+    display: none;
+    /* background: #0f2f5a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .12) */
+}
+
+.product-card p,
+.product-card a,
+.product-card img {
+    transition: all 0.3s ease
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-card:hover a {
+    background: transparent;
+    color: #0f2f5a !important;
+    outline: 1px solid #0f2f5a;
+}
+
+.product-card:hover p {
+    color: #216cce;
+}
+
+.form-check-input:checked {
+    background-color: #12305D;
+    border-color: #12305D;
+}
+
+@media (min-width: 1200px) {
+    legend {
+        font-size: unset;
+    }
 }
 
 @media(max-width: 990px) {

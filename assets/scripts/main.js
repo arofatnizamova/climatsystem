@@ -17,13 +17,13 @@ $(function () {
                 arrows: true,
                 autoplay: true,
             }
-        } else if (slider.hasClass('products')) {
+        } else if (slider.hasClass('news')) {
             extraOptions = {
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 centerMode: false,
                 arrows: true,
-                dots: true,
+                dots: false,
                 autoplay: true,
                 adaptiveHeight: true,
                 responsive: [

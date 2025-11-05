@@ -193,15 +193,211 @@
             <div class="container">
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
                         <li class="breadcrumb-item"><a href="#">Каталог</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Бытовые кондиционеры</li>
                     </ol>
                 </nav>
-                <div class="row">
+                <div class="row gy-4">
                     <div class="col-lg-3">
                         <div class="w-100">
-                            <div class="bg-main-2 rounded-3 p-3">
+                            <div class="d-lg-none d-block">
+                                <button class="btn btn-primary bg-corp border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                    <i class="fa-solid fa-filter me-2"></i>Фильтры
+                                </button>
+
+                                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Фильтры</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body bg-main-2">
+                                        <form action="">
+                                            <div class="range-card range-field" data-min="0" data-max="100" data-step="1">
+                                                <label for="" class="fw-semibold fs-sm mb-3">Охлождение, кВт</label>
+                                                <div class="row g-2">
+                                                    <div class="col-6">
+                                                        <label for="" class="text-xs opacity-50 ms-2">От</label>
+                                                        <input name="price_min" type="number" class="form-control  js-range-from" placeholder="От" value="2">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="" class="text-xs opacity-50 ms-2">До</label>
+                                                        <input name="price_max" type="number" class="form-control  js-range-to" placeholder="До" value="71">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="js-range mt-2"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="range-card range-field" data-min="20" data-max="95" data-step="5">
+                                                <label for="" class="fw-semibold fs-sm mb-3">Площадь, м2</label>
+                                                <div class="row g-2">
+                                                    <div class="col-6">
+                                                        <label for="" class="text-xs opacity-50 ms-2">От</label>
+                                                        <input name="weight_min" type="number" class="form-control js-range-from" placeholder="От" value="20">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="" class="text-xs opacity-50 ms-2">До</label>
+                                                        <input name="weight_max" type="number" class="form-control  js-range-to" placeholder="До" value="95">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="js-range mt-2"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="range-card range-field" data-min="26700" data-max="116000" data-step="5">
+                                                <label for="" class="fw-semibold fs-sm mb-3">Цена</label>
+                                                <div class="row g-2">
+                                                    <div class="col-6">
+                                                        <label for="" class="text-xs opacity-50 ms-2">От</label>
+                                                        <input name="price_min" type="number" class="form-control js-range-from" placeholder="От" value="26700">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="" class="text-xs opacity-50 ms-2">До</label>
+                                                        <input name="price_max" type="number" class="form-control  js-range-to" placeholder="До" value="116000">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="js-range mt-2"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <fieldset class="range-card p-3">
+                                                <legend class="fw-semibold fs-sm mb-3">Производитель</legend>
+                                                <div class="brand-list" data-visible="5">
+                                                    <!-- видимые по умолчанию -->
+                                                    <div class="form-check brand-check">
+                                                        <input class="form-check-input" type="checkbox" name="brand[]" value="AUX" id="brand-aux">
+                                                        <label class="form-check-label text-dirt text-xs" for="brand-aux">AUX</label>
+                                                    </div>
+                                                    <div class="form-check brand-check">
+                                                        <input class="form-check-input" type="checkbox" name="brand[]" value="Electrolux" id="brand-electrolux">
+                                                        <label class="form-check-label text-dirt text-xs" for="brand-electrolux">Electrolux</label>
+                                                    </div>
+                                                    <div class="form-check brand-check">
+                                                        <input class="form-check-input" type="checkbox" name="brand[]" value="Royal Cima" id="brand-royal">
+                                                        <label class="form-check-label text-dirt text-xs" for="brand-royal">Royal Cima</label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <hr>
+                                            <fieldset class="range-card p-3">
+                                                <legend class="fw-semibold fs-sm mb-3">Компрессор</legend>
+                                                <div class="brand-list" data-visible="5">
+                                                    <!-- видимые по умолчанию -->
+                                                    <div class="form-check brand-check">
+                                                        <input class="form-check-input" type="checkbox" name="invertor" value="invertor" id="invertor">
+                                                        <label class="form-check-label text-dirt text-xs" for="invertor">Инвертор</label>
+                                                    </div>
+                                                    <div class="form-check brand-check">
+                                                        <input class="form-check-input" type="checkbox" name="notinvertor" value="notinvertor" id="notinvertor">
+                                                        <label class="form-check-label text-dirt text-xs" for="notinvertor">Не инвертор</label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <hr>
+                                            <div class="range-card range-field" data-min="19" data-max="46" data-step="1">
+                                                <label for="" class="fw-semibold fs-sm mb-3">Уровень шума, дБа</label>
+                                                <div class="row g-2">
+                                                    <div class="col-6">
+                                                        <label for="" class="text-xs opacity-50 ms-2">От</label>
+                                                        <input name="loud_min" type="number" class="form-control js-range-from" placeholder="От" value="19">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="" class="text-xs opacity-50 ms-2">До</label>
+                                                        <input name="loud_max" type="number" class="form-control  js-range-to" placeholder="До" value="46">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="js-range mt-2"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <fieldset class="range-card p-3">
+                                                <legend class="fw-semibold fs-sm mb-3">Производитель</legend>
+                                                <div class="brand-list" data-visible="5">
+                                                    <!-- видимые по умолчанию -->
+                                                    <div class="form-check brand-check">
+                                                        <input class="form-check-input" type="checkbox" name="brand[]" value="AUX" id="brand-aux">
+                                                        <label class="form-check-label text-dirt text-xs" for="brand-aux">A</label>
+                                                    </div>
+                                                    <div class="form-check brand-check">
+                                                        <input class="form-check-input" type="checkbox" name="brand[]" value="Electrolux" id="brand-electrolux">
+                                                        <label class="form-check-label text-dirt text-xs" for="brand-electrolux">A+</label>
+                                                    </div>
+                                                    <div class="form-check brand-check">
+                                                        <input class="form-check-input" type="checkbox" name="brand[]" value="Royal Cima" id="brand-royal">
+                                                        <label class="form-check-label text-dirt text-xs" for="brand-royal">A++</label>
+                                                    </div>
+                                                    <div class="form-check brand-check">
+                                                        <input class="form-check-input" type="checkbox" name="brand[]" value="Royal Cima" id="brand-royal">
+                                                        <label class="form-check-label text-dirt text-xs" for="brand-royal">A+++</label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <hr>
+                                            <fieldset class="range-card p-3">
+                                                <legend class="fw-semibold fs-sm mb-3">Производитель</legend>
+                                                <div class="brand-list" data-visible="5">
+                                                    <!-- видимые по умолчанию -->
+                                                    <div class="form-check brand-check">
+                                                        <input class="form-check-input" type="checkbox" name="true" value="true" id="true">
+                                                        <label class="form-check-label text-dirt text-xs" for="true">Да</label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <hr>
+                                            <div class="range-card range-field" data-min="15" data-max="25" data-step="1">
+                                                <label for="" class="fw-semibold fs-sm mb-3">Мах длинна трассы</label>
+                                                <div class="row g-2">
+                                                    <div class="col-6">
+                                                        <label for="" class="text-xs opacity-50 ms-2">От</label>
+                                                        <input name="length_min" type="number" class="form-control js-range-from" placeholder="От" value="15">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="" class="text-xs opacity-50 ms-2">До</label>
+                                                        <input name="length_max" type="number" class="form-control  js-range-to" placeholder="До" value="25">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="js-range mt-2"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <fieldset class="range-card p-3">
+                                                <legend class="fw-semibold fs-sm mb-3">Особые отметки</legend>
+                                                <div class="brand-list" data-visible="5">
+                                                    <!-- видимые по умолчанию -->
+                                                    <div class="form-check brand-check">
+                                                        <input class="form-check-input" type="checkbox" name="special[]" value="AUX" id="special-mark-1">
+                                                        <label class="form-check-label text-dirt text-xs" for="special-mark-1">A</label>
+                                                    </div>
+                                                    <div class="form-check brand-check">
+                                                        <input class="form-check-input" type="checkbox" name="special[]" value="Electrolux" id="wifi">
+                                                        <label class="form-check-label text-dirt text-xs" for="wifi">WI-FI</label>
+                                                    </div>
+                                                    <div class="form-check brand-check">
+                                                        <input class="form-check-input" type="checkbox" name="special[]" value="Royal Cima" id="offer">
+                                                        <label class="form-check-label text-dirt text-xs" for="offer">Выгодно</label>
+                                                    </div>
+                                                    <div class="form-check brand-check">
+                                                        <input class="form-check-input" type="checkbox" name="special[]" value="Electrolux" id="garanty">
+                                                        <label class="form-check-label text-dirt text-xs" for="garanty">Гарантия 5 лет</label>
+                                                    </div>
+                                                    <div class="form-check brand-check">
+                                                        <input class="form-check-input" type="checkbox" name="special[]" value="Royal Cima" id="sale">
+                                                        <label class="form-check-label text-dirt text-xs" for="sale">Хит продаж</label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <button type="reset" class=" bg-corp py-3 mt-3 border-0 d-block w-100 rounded-3 text-white text-xs text-center">Сбросить фильтры</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-main-2 d-lg-block d-none rounded-3 p-3">
                                 <form action="">
                                     <div class="range-card range-field" data-min="0" data-max="100" data-step="1">
                                         <label for="" class="fw-semibold fs-sm mb-3">Охлождение, кВт</label>
@@ -327,6 +523,62 @@
                                             </div>
                                         </div>
                                     </fieldset>
+                                    <hr>
+                                    <fieldset class="range-card p-3">
+                                        <legend class="fw-semibold fs-sm mb-3">Производитель</legend>
+                                        <div class="brand-list" data-visible="5">
+                                            <!-- видимые по умолчанию -->
+                                            <div class="form-check brand-check">
+                                                <input class="form-check-input" type="checkbox" name="true" value="true" id="true">
+                                                <label class="form-check-label text-dirt text-xs" for="true">Да</label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <hr>
+                                    <div class="range-card range-field" data-min="15" data-max="25" data-step="1">
+                                        <label for="" class="fw-semibold fs-sm mb-3">Мах длинна трассы</label>
+                                        <div class="row g-2">
+                                            <div class="col-6">
+                                                <label for="" class="text-xs opacity-50 ms-2">От</label>
+                                                <input name="length_min" type="number" class="form-control js-range-from" placeholder="От" value="15">
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="" class="text-xs opacity-50 ms-2">До</label>
+                                                <input name="length_max" type="number" class="form-control  js-range-to" placeholder="До" value="25">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="js-range mt-2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <fieldset class="range-card p-3">
+                                        <legend class="fw-semibold fs-sm mb-3">Особые отметки</legend>
+                                        <div class="brand-list" data-visible="5">
+                                            <!-- видимые по умолчанию -->
+                                            <div class="form-check brand-check">
+                                                <input class="form-check-input" type="checkbox" name="special[]" value="AUX" id="special-mark-1">
+                                                <label class="form-check-label text-dirt text-xs" for="special-mark-1">A</label>
+                                            </div>
+                                            <div class="form-check brand-check">
+                                                <input class="form-check-input" type="checkbox" name="special[]" value="Electrolux" id="wifi">
+                                                <label class="form-check-label text-dirt text-xs" for="wifi">WI-FI</label>
+                                            </div>
+                                            <div class="form-check brand-check">
+                                                <input class="form-check-input" type="checkbox" name="special[]" value="Royal Cima" id="offer">
+                                                <label class="form-check-label text-dirt text-xs" for="offer">Выгодно</label>
+                                            </div>
+                                            <div class="form-check brand-check">
+                                                <input class="form-check-input" type="checkbox" name="special[]" value="Electrolux" id="garanty">
+                                                <label class="form-check-label text-dirt text-xs" for="garanty">Гарантия 5 лет</label>
+                                            </div>
+                                            <div class="form-check brand-check">
+                                                <input class="form-check-input" type="checkbox" name="special[]" value="Royal Cima" id="sale">
+                                                <label class="form-check-label text-dirt text-xs" for="sale">Хит продаж</label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <button type="reset" class=" bg-corp py-3 mt-3 border-0 d-block w-100 rounded-3 text-white text-xs text-center">Сбросить фильтры</button>
                                 </form>
                             </div>
                         </div>
@@ -341,7 +593,7 @@
                                         <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm pt-3">ROYAL CLIMA RCI-RSN40HN</p>
                                         <p class="text-center opacity-50 mb-1">Арт.</p>
                                         <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm">59 090 руб</p>
-                                        <a href="#" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
+                                        <a href="product-item.html" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-sm-6">
@@ -350,7 +602,7 @@
                                         <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm pt-3">ROYAL CLIMA RCI-RSN40HN</p>
                                         <p class="text-center opacity-50 mb-1">Арт.</p>
                                         <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm">59 090 руб</p>
-                                        <a href="#" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
+                                        <a href="product-item.html" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-sm-6">
@@ -359,7 +611,7 @@
                                         <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm pt-3">ROYAL CLIMA RCI-RSN40HN</p>
                                         <p class="text-center opacity-50 mb-1">Арт.</p>
                                         <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm">59 090 руб</p>
-                                        <a href="#" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
+                                        <a href="product-item.html" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-sm-6">
@@ -368,7 +620,7 @@
                                         <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm pt-3">ROYAL CLIMA RCI-RSN40HN</p>
                                         <p class="text-center opacity-50 mb-1">Арт.</p>
                                         <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm">59 090 руб</p>
-                                        <a href="#" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
+                                        <a href="product-item.html" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-sm-6">
@@ -377,7 +629,7 @@
                                         <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm pt-3">ROYAL CLIMA RCI-RSN40HN</p>
                                         <p class="text-center opacity-50 mb-1">Арт.</p>
                                         <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm">59 090 руб</p>
-                                        <a href="#" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
+                                        <a href="product-item.html" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-sm-6">
@@ -386,7 +638,61 @@
                                         <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm pt-3">ROYAL CLIMA RCI-RSN40HN</p>
                                         <p class="text-center opacity-50 mb-1">Арт.</p>
                                         <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm">59 090 руб</p>
-                                        <a href="#" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
+                                        <a href="product-item.html" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6">
+                                    <div class="product-card w-100 h-100 d-flex flex-column bg-main-2 rounded-3 p-3">
+                                        <img src="assets/images/catalog/1.png" alt="" class="img-fluid d-block mx-auto">
+                                        <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm pt-3">ROYAL CLIMA RCI-RSN40HN</p>
+                                        <p class="text-center opacity-50 mb-1">Арт.</p>
+                                        <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm">59 090 руб</p>
+                                        <a href="product-item.html" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6">
+                                    <div class="product-card w-100 h-100 d-flex flex-column bg-main-2 rounded-3 p-3">
+                                        <img src="assets/images/catalog/1.png" alt="" class="img-fluid d-block mx-auto">
+                                        <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm pt-3">ROYAL CLIMA RCI-RSN40HN</p>
+                                        <p class="text-center opacity-50 mb-1">Арт.</p>
+                                        <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm">59 090 руб</p>
+                                        <a href="product-item.html" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6">
+                                    <div class="product-card w-100 h-100 d-flex flex-column bg-main-2 rounded-3 p-3">
+                                        <img src="assets/images/catalog/1.png" alt="" class="img-fluid d-block mx-auto">
+                                        <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm pt-3">ROYAL CLIMA RCI-RSN40HN</p>
+                                        <p class="text-center opacity-50 mb-1">Арт.</p>
+                                        <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm">59 090 руб</p>
+                                        <a href="product-item.html" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6">
+                                    <div class="product-card w-100 h-100 d-flex flex-column bg-main-2 rounded-3 p-3">
+                                        <img src="assets/images/catalog/1.png" alt="" class="img-fluid d-block mx-auto">
+                                        <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm pt-3">ROYAL CLIMA RCI-RSN40HN</p>
+                                        <p class="text-center opacity-50 mb-1">Арт.</p>
+                                        <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm">59 090 руб</p>
+                                        <a href="product-item.html" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6">
+                                    <div class="product-card w-100 h-100 d-flex flex-column bg-main-2 rounded-3 p-3">
+                                        <img src="assets/images/catalog/1.png" alt="" class="img-fluid d-block mx-auto">
+                                        <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm pt-3">ROYAL CLIMA RCI-RSN40HN</p>
+                                        <p class="text-center opacity-50 mb-1">Арт.</p>
+                                        <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm">59 090 руб</p>
+                                        <a href="product-item.html" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6">
+                                    <div class="product-card w-100 h-100 d-flex flex-column bg-main-2 rounded-3 p-3">
+                                        <img src="assets/images/catalog/1.png" alt="" class="img-fluid d-block mx-auto">
+                                        <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm pt-3">ROYAL CLIMA RCI-RSN40HN</p>
+                                        <p class="text-center opacity-50 mb-1">Арт.</p>
+                                        <p class="line-clamp-2 ff-oswald text-uppercase text-center fw-semibold text-sm">59 090 руб</p>
+                                        <a href="product-item.html" class="d-block bg-corp py-3 rounded-3 text-white text-xs text-center">Подробнее</a>
                                     </div>
                                 </div>
                             </div>

@@ -380,6 +380,10 @@ footer {
     border-color: #12305D;
 }
 
+legend {
+    font-size: unset;
+}
+
 @media (min-width: 1200px) {
     legend {
         font-size: unset;

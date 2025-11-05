@@ -51,12 +51,20 @@ a {
     background: #12305D;
 }
 
+.text-corp {
+    color: #12305D;
+}
+
 .text-dust {
     color: #7C7C7C;
 }
 
 .text-dirt {
     color: #878B93;
+}
+
+.text-green {
+    color: #28B31C;
 }
 
 .text-primary {
@@ -382,6 +390,89 @@ footer {
 
 legend {
     font-size: unset;
+}
+
+/* Активный слайд миниатюры */
+.swiper-thumbs .swiper-slide {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.swiper-thumbs .swiper-slide img {
+    border-radius: 5px;
+}
+
+.swiper-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+    border: 1px solid #292929;
+}
+
+.number-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #12305D;
+    /* тонкая синеватая рамка как на примере */
+    border-radius: 12px;
+    overflow: hidden;
+    width: 150px;
+    height: 35px;
+}
+
+.number-input input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: inherit;
+    background: transparent;
+    -moz-appearance: textfield;
+}
+
+.number-input input::-webkit-outer-spin-button,
+.number-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.number-input button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: #12305D;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.number-input button:hover {
+    background: #e8f3f9;
+}
+
+.bordered-1 {
+    border: 1px solid #A6C7FF;
+}
+
+.form-control {
+    background: white;
+    border: 1px solid #A6C7FF;
+    border-radius: 10px;
+    padding: 15px 16px;
+    font-size: 16px;
+}
+
+.form-control::placeholder {
+    color: #B6B6B6;
+    font-size: 16px;
 }
 
 @media (min-width: 1200px) {

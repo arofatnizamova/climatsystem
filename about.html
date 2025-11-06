@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/nouislider@15.8.1/dist/nouislider.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
@@ -23,6 +25,11 @@
                     <img src="assets/icons/main/logo.svg" alt="" class="img-fluid logo d-xl-none d-block">
                 </a>
                 <div class="d-flex d-xl-none align-items-center gap-2">
+                    <a href="basket.html" class="d-flex align-items-center gap-3">
+                        <button type="button" class="bg-transparent border-0 position-relative">
+                            <i class="fa-solid fa-basket-shopping text-primary fs-4"></i>
+                        </button>
+                    </a>
                     <button class="bg-transparent border-0">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
@@ -42,13 +49,13 @@
                                 <a class="nav-link active px-xl-4 px-3" href="#">Акции</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-xl-4 px-3" href="#">О компании</a>
+                                <a class="nav-link px-xl-4 px-3" href="about.html">О компании</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-xl-4 px-3" href="index.html#contacts">Контакты</a>
+                                <a class="nav-link px-xl-4 px-3" href="contacts.html">Контакты</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-xl-4 px-3" href="index.html#blog">Блог</a>
+                                <a class="nav-link px-xl-4 px-3" href="blog.html">Блог</a>
                             </li>
                         </ul>
                         <div class="d-block d-xl-none align-items-center gap-3 mx-auto">
@@ -74,16 +81,6 @@
                                     </a>
                                 </li>
                             </ul>
-                            <a href="#" class="d-flex align-items-center gap-3 px-3">
-                                <button type="button" class="bg-transparent border-0 position-relative">
-                                    <i class="fa-solid fa-basket-shopping text-primary fs-3"></i>
-                                    <span class="position-absolute bottom-custom start-100 translate-middle badge rounded-pill bg-danger">
-                                        0
-                                        <span class="visually-hidden">unread messages</span>
-                                    </span>
-                                </button>
-                                <span class="nav-link">Корзина</span>
-                            </a>
                         </div>
                         <p class="mb-0 px-5 d-xl-block d-none nav-link"><i class="fa-regular fa-clock me-2"></i><span class="text-dust fw-normal">Ежедневно с 8:00 до 21:00</span></p>
                     </div>
@@ -94,7 +91,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-3 col-lg-2">
-                        <img src="assets/icons/main/logo.svg" alt="" class="img-fluid logo">
+                        <a href="index.html">
+                            <img src="assets/icons/main/logo.svg" alt="" class="img-fluid logo">
+                        </a>
                     </div>
                     <div class="col-lg-3">
                         <div class="input-search-wrapper position-relative  h-100 d-flex align-items-center">
@@ -104,13 +103,13 @@
                     </div>
                     <div class="col-lg-2">
                         <div class="w-100 h-100 d-flex flex-column align-items-center">
-                            <a href="#" class="fw-bold">+7 (495) 128 26 01</a>
-                            <a href="#" class="text-primary"><i class="bi bi-tablet me-1"></i>Обратный звонок</a>
+                            <a href="tel:+74951282601" class="fw-bold hover-custom-red">+7 (495) 128 26 01</a>
+                            <a href="contacts.html#form" class="text-primary hover-custom-red"><i class="bi bi-tablet me-1"></i>Обратный звонок</a>
                         </div>
                     </div>
                     <div class="col-lg-2">
                         <div class="w-100 h-100 d-flex flex-column align-items-center">
-                            <a href="#" class="fw-bold">+7 (934) 477 23 73</a>
+                            <a href="tel:+79344772373" class="fw-bold hover-custom-red">+7 (934) 477 23 73</a>
                             <ul class="list-unstyled d-flex align-items-center gap-2">
                                 <li>
                                     <a href="#">
@@ -137,7 +136,7 @@
                     </div>
                     <div class="col-xxl-2 col-lg-3">
                         <div class="w-100 h-100 d-flex align-items-end">
-                            <a href="mailto:info@climatsistema.ru" class="text-primary d-block mb-2">
+                            <a href="mailto:info@climatsistema.ru" class="text-primary hover-custom-red d-block mb-2">
                                 <i class="fa-regular fa-envelope me-1"></i>
                                 <span>info@climatsistema.ru</span>
                             </a>
@@ -190,7 +189,7 @@
     <main>
         <section class="py-lg-5 py-3">
             <div class="container">
-                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
                         <li class="breadcrumb-item active" aria-current="page">О компании</li>
@@ -222,7 +221,7 @@
                                     <img src="assets/icons/main/footer-logo.svg" alt="" class="img-fluid">
                                     <p class="text-sm text-dirt my-2 lh-sm">Продажа и установка
                                         сплит-систем</p>
-                                    <a href="#" class="bg-white px-3 py-sm-3 py-2 fw-semibold rounded-4 my-3 d-block w-fit-content text-black text-sm">Обратный звонок</a>
+                                    <a href="#" class="bg-white footer-btn  px-3 py-sm-3 py-2 fw-semibold rounded-4 my-3 d-block w-fit-content text-black text-sm">Обратный звонок</a>
                                     <img src="assets/icons/main/payment.svg" alt="" class="img-fluid">
                                 </div>
                             </div>
@@ -252,19 +251,19 @@
                                     <p class="text-uppercase fw-semibold text-lg ff-oswald text-dirt">Навигация</p>
                                     <ul class="list-unstyled text-sm fw-semibold">
                                         <li class="mb-2">
-                                            <a href="#" class="footer-link">О комапнии</a>
+                                            <a href="about.html" class="footer-link">О комапнии</a>
                                         </li>
                                         <li class="mb-2">
-                                            <a href="index.html#contacts" class="footer-link">Контакты</a>
+                                            <a href="contacts.html" class="footer-link">Контакты</a>
                                         </li>
                                         <li class="mb-2">
                                             <a href="#" class="footer-link">Акции</a>
                                         </li>
-                                        <li>
+                                        <li class="mb-2">
                                             <a href="#" class="footer-link">Доставка и оплата</a>
                                         </li>
-                                        <li>
-                                            <a href="index.html#news" class="footer-link">Блог</a>
+                                        <li class="mb-2">
+                                            <a href="blog.html" class="footer-link">Блог</a>
                                         </li>
                                         <li>
                                             <a href="#" class="footer-link">Карта сайта</a>
@@ -315,7 +314,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@15.8.1/dist/nouislider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/wnumb@1.2.0/wNumb.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/scripts/main.js"></script>
 </body>
 

@@ -600,6 +600,65 @@ legend {
     }
 }
 
+.hover-custom-red,
+.footer-link,
+.footer-btn {
+    transition: all 0.3s ease;
+}
+
+.hover-custom-red:hover,
+.footer-link:hover {
+    color: #F20952 !important;
+}
+
+.footer-btn:hover {
+    background: #F20952 !important;
+    color: white !important;
+}
+
+nav:has(.breadcrumb) {
+    --bs-breadcrumb-divider: "›";
+}
+
+.breadcrumb-item {
+    color: #777777;
+    transition: all 0.3s ease;
+}
+
+.breadcrumb-item:not(.active):hover {
+    color: #F20952;
+}
+
+.breadcrumb-item.active {
+    color: black;
+}
+
+.btn-outline-blue {
+    transition: all 0.3s ease;
+    background: #EFF5FF;
+    border: 1px solid #A6C7FF;
+    color: #12305D;
+    font-weight: 600;
+}
+
+.btn-outline-blue:hover {
+    background: #A6C7FF;
+    color: white;
+}
+
+.btn-primary {
+    transition: all 0.3s ease;
+    background: #12305D;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: #12305D;
+    outline: 1px solid #12305D;
+}
+
 @media(max-width:768px) {
 
     .slider-item img {

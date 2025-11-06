@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КЛИМАТСИСТЕМА</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/nouislider@15.8.1/dist/nouislider.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/icons/main/logo.svg" alt="" class="img-fluid logo d-xl-none d-block">
+                </a>
+                <div class="d-flex d-xl-none align-items-center gap-2">
+                    <a href="basket.html" class="d-flex align-items-center gap-3">
+                        <button type="button" class="bg-transparent border-0 position-relative">
+                            <i class="fa-solid fa-basket-shopping text-primary fs-4"></i>
+                        </button>
+                    </a>
+                    <button class="bg-transparent border-0">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="mx-auto d-xl-flex d-block align-items-center ">
+                        <ul class="navbar-nav gap-xl-5 mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link px-xl-4 px-3" href="delivery-payment.html">Доставка и оплата</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active px-xl-4 px-3" href="promo.html">Акции</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-xl-4 px-3" href="about.html">О компании</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-xl-4 px-3" href="contacts.html">Контакты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-xl-4 px-3" href="blog.html">Блог</a>
+                            </li>
+                        </ul>
+                        <div class="d-block d-xl-none align-items-center gap-3 mx-auto">
+                            <ul class="list-unstyled d-xl-flex align-items-center gap-3 mb-0">
+                                <li>
+                                    <a href="catalog.html" class="nav-link px-3 mb-3">
+                                        Бытовые кондиционеры
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="catalog.html" class="nav-link px-3 mb-3">
+                                        Промышленные кондиционеры
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="catalog.html" class="nav-link px-3 mb-3">
+                                        Мульти сплит системы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="catalog.html" class="nav-link px-3 mb-3">
+                                        Полупромышленные кондиционеры
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="mb-0 px-5 d-xl-block d-none nav-link"><i class="fa-regular fa-clock me-2"></i><span class="text-dust fw-normal">Ежедневно с 8:00 до 21:00</span></p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="border-bottom-corp d-xl-block d-none py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-3 col-lg-2">
+                        <a href="index.html">
+                            <img src="assets/icons/main/logo.svg" alt="" class="img-fluid logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="input-search-wrapper position-relative  h-100 d-flex align-items-center">
+                            <a href="#" class="position-absolute search-icon"><i class="fa-solid fa-magnifying-glass "></i></a>
+                            <input type="text" class="form-control w-100" placeholder="Поиск...">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="w-100 h-100 d-flex flex-column align-items-center">
+                            <a href="tel:+74951282601" class="fw-bold hover-custom-red">+7 (495) 128 26 01</a>
+                            <a href="contacts.html#form" class="text-primary hover-custom-red"><i class="bi bi-tablet me-1"></i>Обратный звонок</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="w-100 h-100 d-flex flex-column align-items-center">
+                            <a href="tel:+79344772373" class="fw-bold hover-custom-red">+7 (934) 477 23 73</a>
+                            <ul class="list-unstyled d-flex align-items-center gap-2">
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/icons/social/1.svg" alt="" class="img-fluid">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/icons/social/2.svg" alt="" class="img-fluid">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/icons/social/3.svg" alt="" class="img-fluid">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/icons/social/4.svg" alt="" class="img-fluid">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-lg-3">
+                        <div class="w-100 h-100 d-flex align-items-end">
+                            <a href="mailto:info@climatsistema.ru" class="text-primary hover-custom-red d-block mb-2">
+                                <i class="fa-regular fa-envelope me-1"></i>
+                                <span>info@climatsistema.ru</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-3 d-xl-block d-none">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="d-flex align-items-center gap-3 mx-auto">
+                        <ul class="list-unstyled d-flex align-items-center gap-3 mb-0">
+                            <li>
+                                <a href="catalog.html" class="nav-link">
+                                    Бытовые кондиционеры
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html" class="nav-link">
+                                    Промышленные кондиционеры
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html" class="nav-link">
+                                    Мульти сплит системы
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html" class="nav-link">
+                                    Полупромышленные кондиционеры
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="basket.html" class="d-flex align-items-center gap-3">
+                            <button type="button" class="bg-transparent border-0 position-relative">
+                                <i class="fa-solid fa-basket-shopping text-primary fs-3"></i>
+                                <span class="position-absolute bottom-custom start-100 translate-middle badge rounded-pill bg-danger">
+                                    0
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </button>
+                            <span class="nav-link">Корзина</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Корзина</li>
+                    </ol>
+                </nav>
+                <h3 class="text-uppercase text-xl text-lg-start text-center ff-oswald fw-semibold my-5">Корзина</h3>
+                <div class="row gy-4">
+                    <div class="col-xl-9">
+                        <div class="w-100">
+                            <div class="row gy-4">
+                                <div class="col-lg-3 col-6 order-1">
+                                    <img src="assets/images/catalog/2.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-3 col-6 order-2">
+                                    <div class="w-100 text-center">
+                                        <p class="mb-sm-4 mb-0">Название</p>
+                                        <a href="product-item.html" class="fw-semibold hover-custom-red ff-oswald text-corp text-md">AUX ASW-HO7B4/FJ-BR1</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 order-lg-3 order-4">
+                                    <div class="w-100 d-flex flex-lg-column align-items-center text-center">
+                                        <p class="mb-lg-4 mb-0 me-lg-0 me-4">Кол-во</p>
+                                        <div class="number-input">
+                                            <button class="plus">+</button>
+                                            <input type="number" value="1" min="1" max="99">
+                                            <button class="minus">−</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 order-lg-4 order-3">
+                                    <div class="w-100 d-flex flex-lg-column align-items-center text-center">
+                                        <p class="mb-lg-4 mb-0 me-lg-0 me-4">Цена</p>
+                                        <p class="mb-0 text-md fw-semibold ff-oswald">27 700 руб.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="light-line">
+                            <div class="row gy-4">
+                                <div class="col-lg-3 col-6 order-1">
+                                    <img src="assets/images/catalog/2.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-3 col-6 order-2">
+                                    <div class="w-100 text-center">
+                                        <p class="mb-sm-4 mb-0">Название</p>
+                                        <a href="product-item.html" class="fw-semibold hover-custom-red ff-oswald text-corp text-md">AUX ASW-HO7B4/FJ-BR1</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 order-lg-3 order-4">
+                                    <div class="w-100 d-flex flex-lg-column align-items-center text-center">
+                                        <p class="mb-lg-4 mb-0 me-lg-0 me-4">Кол-во</p>
+                                        <div class="number-input">
+                                            <button class="plus">+</button>
+                                            <input type="number" value="1" min="1" max="99">
+                                            <button class="minus">−</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 order-lg-4 order-3">
+                                    <div class="w-100 d-flex flex-lg-column align-items-center text-center">
+                                        <p class="mb-lg-4 mb-0 me-lg-0 me-4">Цена</p>
+                                        <p class="mb-0 text-md fw-semibold ff-oswald">27 700 руб.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="light-line">
+                            <div class="row gy-4">
+                                <div class="col-lg-3 col-6 order-1">
+                                    <img src="assets/images/catalog/2.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-lg-3 col-6 order-2">
+                                    <div class="w-100 text-center">
+                                        <p class="mb-sm-4 mb-0">Название</p>
+                                        <a href="product-item.html" class="fw-semibold hover-custom-red ff-oswald text-corp text-md">AUX ASW-HO7B4/FJ-BR1</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 order-lg-3 order-4">
+                                    <div class="w-100 d-flex flex-lg-column align-items-center text-center">
+                                        <p class="mb-lg-4 mb-0 me-lg-0 me-4">Кол-во</p>
+                                        <div class="number-input">
+                                            <button class="plus">+</button>
+                                            <input type="number" value="1" min="1" max="99">
+                                            <button class="minus">−</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 order-lg-4 order-3">
+                                    <div class="w-100 d-flex flex-lg-column align-items-center text-center">
+                                        <p class="mb-lg-4 mb-0 me-lg-0 me-4">Цена</p>
+                                        <p class="mb-0 text-md fw-semibold ff-oswald">27 700 руб.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="light-line">
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="w-100">
+                            <div class="bg-main-2 px-3 py-4 rounded-3">
+                                <p class="ff-oswald fw-semibold text-lg">Ваш заказ</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p>6 товаров</p>
+                                    <p>166 200 руб.</p>
+                                </div>
+                                <hr class="light-line">
+                                <div class="d-flex justify-content-between">
+                                    <p class="ff-oswald fw-semibold text-lg">Итого:</p>
+                                    <div class="">
+                                        <p class="ff-oswald fw-semibold text-lg">166 200 руб.</p>
+                                        <p>Без учета доставки</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="payment.html" class="btn-primary mt-3 d-block rounded-3 py-2  text-center">Перейти к оформлению</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-3 text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <div class="w-100 py-4">
+                        <div class="row gy-4 w-100">
+                            <div class="col-lg-3">
+                                <div class="w-100 h-100">
+                                    <img src="assets/icons/main/footer-logo.svg" alt="" class="img-fluid">
+                                    <p class="text-sm text-dirt my-2 lh-sm">Продажа и установка
+                                        сплит-систем</p>
+                                    <a href="#" class="bg-white footer-btn  px-3 py-sm-3 py-2 fw-semibold rounded-4 my-3 d-block w-fit-content text-black text-sm">Обратный звонок</a>
+                                    <img src="assets/icons/main/payment.svg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="w-100 h-100 ">
+                                    <p class="text-uppercase fw-semibold text-lg ff-oswald text-dirt">Каталог</p>
+                                    <ul class="list-unstyled text-sm fw-semibold">
+                                        <li class="mb-2">
+                                            <a href="catalog.html" class="footer-link">Бытовые кондиционеры</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="catalog.html" class="footer-link">Промышленные
+                                                кондиционеры</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="catalog.html" class="footer-link">Мульти сплинг системы</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html" class="footer-link">Полупромышленные
+                                                кондиционеры</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="w-100 h-100 ">
+                                    <p class="text-uppercase fw-semibold text-lg ff-oswald text-dirt">Навигация</p>
+                                    <ul class="list-unstyled text-sm fw-semibold">
+                                        <li class="mb-2">
+                                            <a href="about.html" class="footer-link">О комапнии</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="contacts.html" class="footer-link">Контакты</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="footer-link">Акции</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="footer-link">Доставка и оплата</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="blog.html" class="footer-link">Блог</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="footer-link">Карта сайта</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="w-100 h-100 ">
+                                    <p class="text-uppercase fw-semibold text-lg ff-oswald text-dirt">Контакты</p>
+                                    <ul class="list-unstyled text-sm fw-semibold">
+                                        <li class="mb-2">
+                                            <a href="tel:+74951282601" class="footer-link d-flex align-items-center gap-2"><i class="bi bi-tablet"></i>+7 (495) 128 26 01</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="mailto:info@climatsistema.ru" class="footer-link d-flex align-items-center gap-2"><i class="bi bi-envelope"></i>info@climatsistema.ru</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="footer-link d-flex gap-2"><i class="bi bi-geo-alt"></i>123112, Москва, наб.
+                                                Пресненская, д. 12,
+                                                помещ. 10/45</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <p class="footer-link d-flex align-items-center gap-2"><i class="bi bi-clock"></i>Ежедневно с 8:00 до
+                                                21:00</p>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="tel:+74951282601" class="footer-link d-flex align-items-center gap-2">
+                                                <img src="assets/icons/social/5.svg" alt="">
+                                                <img src="assets/icons/social/6.svg" alt="">
+                                                <img src="assets/icons/social/7.svg" alt="">
+                                                +7 (934) 477 23 73</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-dirt text-center my-3 text-sm">©2004-2025 ООО “Интек”. Все права защищены</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.6.0/jquery.marquee.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab16f4767e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@15.8.1/dist/nouislider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/wnumb@1.2.0/wNumb.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>

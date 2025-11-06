@@ -46,13 +46,13 @@
                                 <a class="nav-link px-xl-4 px-3" href="delivery-payment.html">Доставка и оплата</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link  px-xl-4 px-3" href="promo.html">Акции</a>
+                                <a class="nav-link active px-xl-4 px-3" href="promo.html">Акции</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link px-xl-4 px-3" href="about.html">О компании</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active px-xl-4 px-3" href="contacts.html">Контакты</a>
+                                <a class="nav-link px-xl-4 px-3" href="contacts.html">Контакты</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link px-xl-4 px-3" href="blog.html">Блог</a>
@@ -192,65 +192,111 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+                        <li class="breadcrumb-item active" aria-current="page">Оформление заказа</li>
                     </ol>
                 </nav>
-                <h3 class="text-uppercase text-xl ff-oswald fw-semibold my-sm-5 my-3">Контакты</h3>
-                <div class="row gy-4">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="w-100 h-100 bg-main-2 p-3 rounded-4 d-flex flex-column gap-2  align-items-center">
-                            <i class="bi bi-tablet fs-1 text-corp"></i>
-                            <p class="text-corp text-center mb-0 text-lg fw-semibold">Телефон</p>
-                            <a href="tel:+74951282601" class="hover-custom-red">+7 (495) 128 26 01</a>
-                            <a href="tel:+79344772373" class="hover-custom-red">+7 (934) 477 23 73</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="w-100 h-100 bg-main-2 p-3 rounded-4 d-flex flex-column gap-2  align-items-center">
-                            <i class="bi bi-geo-alt fs-1 text-corp"></i>
-                            <p class="text-corp text-center mb-0 text-lg fw-semibold">Адрес</p>
-                            <p class="mb-0 text-center lh-sm">123112, г. Москва, наб. Пресненская, д. 12, помещ. 10/45</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="w-100 h-100 bg-main-2 p-3 rounded-4 d-flex flex-column gap-2  align-items-center">
-                            <i class="bi bi-envelope fs-1 text-corp"></i>
-                            <p class="text-corp text-center mb-0 text-lg fw-semibold">Email</p>
-                            <a href="mailto:info@climatsistema.ru" class="hover-custom-red">info@climatsistema.ru</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="w-100 h-100 bg-main-2 p-3 rounded-4 d-flex flex-column gap-2  align-items-center">
-                            <i class="bi bi-clock fs-1 text-corp"></i>
-                            <p class="text-corp text-center mb-0 text-lg fw-semibold">График работы</p>
-                            <p class="mb-0 text-center lh-sm">Ежедневно с 8:00 до 21:00</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-lg-5 py-3">
-            <div class="container">
-                <div class="row gy-4 justify-content-between">
-                    <div class="col-lg-6">
-                        <div class="w-100 h-100">
-                            <img src="assets/images/contacts-page/map.png" alt="" class="img-fluid h-100">
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-6">
-                        <div class="w-100 bg-main-2 p-lg-5 p-4 rounded-4">
-                            <h3 class="text-uppercase text-lg ff-oswald fw-semibold mb-sm-5 mb-3 text-center">Возникли вопросы - напишите нам</h3>
-                            <input type="text" class="form-control" placeholder="Имя*">
-                            <input type="tel" class="form-control  my-3" placeholder="+7(___)__-_-_*">
-                            <textarea name="message" id="message" placeholder="Сообщение" class="form-control" rows="3"></textarea>
-                            <div class="form-check brand-check mt-3 ">
-                                <input class="form-check-input" type="checkbox" name="brand[]" value="AUX" id="brand-aux">
-                                <label class="form-check-label text-dirt text-xs" for="brand-aux">Я даю согласие на обработку персональных данных в соответствии с Федеральным законом</label>
+                <h3 class="text-uppercase text-xl text-lg-start text-center ff-oswald fw-semibold my-5">Оформление заказа</h3>
+                <form action="">
+                    <div class="row gx-lg-3 gx-0 w-100 gy-4 justify-content-between">
+                        <div class="col-xxl-4 col-lg-5">
+                            <div class="w-100">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="rounded-circle bg-corp py-1 px-2 text-white fw-semibold text-md ff-oswald">01</div>
+                                    <p class="fw-semibold text-corp text-md mb-0">Выберите тип плательщика</p>
+                                </div>
+                                <ul class="nav nav-pills mt-3 gap-4 ps-lg-5" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                            aria-selected="true">Физическое <br> лицо</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                            aria-selected="false">Юридическое <br> лицо</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content mt-4" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="rounded-circle bg-corp py-1 px-2 text-white fw-semibold text-md ff-oswald">02</div>
+                                            <p class="fw-semibold text-corp text-md mb-0">Введите контактные данные</p>
+                                        </div>
+                                        <div class="ps-lg-5 mt-3">
+                                            <input type="text" class="form-control mb-3" placeholder="ФИО">
+                                            <input type="tel" class="form-control mb-3" placeholder="+7(___)__-__-__">
+                                            <input type="email" class="form-control mb-3" placeholder="Email">
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="rounded-circle bg-corp py-1 px-2 text-white fw-semibold text-md ff-oswald">03</div>
+                                            <p class="fw-semibold text-corp text-md mb-0">Оформление доставки</p>
+                                        </div>
+                                        <div class="ps-lg-5 mt-3">
+                                            <div class="d-flex gap-4">
+                                                <p>Ваш город</p>
+                                                <select name="" id="" class="form-select mb-3">
+                                                    <option value="Москва">Москва</option>
+                                                    <option value="Москва">Пермь</option>
+                                                    <option value="Москва">Санкт-Петербург</option>
+                                                    <option value="Москва">Екатеринбург</option>
+                                                </select>
+                                            </div>
+                                            <input type="text" class="form-control mb-3" placeholder="Адрес">
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="rounded-circle bg-corp py-1 px-2 text-white fw-semibold text-md ff-oswald">02</div>
+                                            <p class="fw-semibold text-corp text-md mb-0">Введите данные</p>
+                                        </div>
+                                        <div class="ps-lg-5 mt-3">
+                                            <input type="text" class="form-control mb-3" placeholder="ИНН">
+                                            <input type="text" class="form-control mb-3" placeholder="Название организвции">
+                                            <input type="text" class="form-control mb-3" placeholder="КПП">
+                                            <input type="text" class="form-control mb-3" placeholder="Юр. адрес организации">
+                                            <input type="text" class="form-control mb-3" placeholder="ОГРН/ОГРНИП">
+                                            <input type="email" class="form-control mb-3" placeholder="Email">
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="rounded-circle bg-corp py-1 px-2 text-white fw-semibold text-md ff-oswald">03</div>
+                                            <p class="fw-semibold text-corp text-md mb-0">Оформление доставки</p>
+                                        </div>
+                                        <div class="ps-lg-5 mt-3">
+                                            <div class="d-flex gap-4">
+                                                <p>Ваш город</p>
+                                                <select name="" id="" class="form-select mb-3">
+                                                    <option value="Москва">Москва</option>
+                                                    <option value="Москва">Пермь</option>
+                                                    <option value="Москва">Санкт-Петербург</option>
+                                                    <option value="Москва">Екатеринбург</option>
+                                                </select>
+                                            </div>
+                                            <input type="text" class="form-control mb-3" placeholder="Адрес">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <button type="submit" class="border-0 btn-primary py-3 w-100 mt-3 rounded-3">Отправить</button>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="w-100">
+                                <div class="bg-main-2 px-4 py-4 rounded-3">
+                                    <p class="ff-oswald fw-semibold text-lg">Ваш заказ</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p>6 товаров</p>
+                                        <p>166 200 руб.</p>
+                                    </div>
+                                    <hr class="light-line">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="ff-oswald fw-semibold text-lg">Итого:</p>
+                                        <div class="">
+                                            <p class="ff-oswald fw-semibold text-lg">166 200 руб.</p>
+                                            <p>Без учета доставки</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="d-block w-100 border-0 btn-primary mt-3 d-block rounded-3 py-2  text-center">Оформить заказ</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
     </main>

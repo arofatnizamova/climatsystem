@@ -51,6 +51,10 @@ a {
     background: #12305D;
 }
 
+.bg-grey-dirt {
+    background: #EEEEEE;
+}
+
 .text-corp {
     color: #12305D;
 }
@@ -659,6 +663,31 @@ nav:has(.breadcrumb) {
     outline: 1px solid #12305D;
 }
 
+.number {
+    font-size: 70px;
+}
+
+.light-line {
+    color: #A6C7FF;
+    opacity: 1;
+    margin: 2rem 0;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background: #12305D;
+    color: white !important;
+}
+
+.nav-pills .nav-link {
+    background: #EFF5FF;
+    color: #12305D;
+}
+
+.form-select {
+    border: 1px solid #A6C7FF;
+}
+
 @media(max-width:768px) {
 
     .slider-item img {
@@ -703,5 +732,9 @@ nav:has(.breadcrumb) {
 
     .img-size-sm {
         width: 150px;
+    }
+
+    .nav-pills .nav-link {
+        font-size: 14px;
     }
 }

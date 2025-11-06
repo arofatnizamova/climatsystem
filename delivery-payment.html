@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КЛИМАТСИСТЕМА</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/nouislider@15.8.1/dist/nouislider.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/icons/main/logo.svg" alt="" class="img-fluid logo d-xl-none d-block">
+                </a>
+                <div class="d-flex d-xl-none align-items-center gap-2">
+                    <a href="basket.html" class="d-flex align-items-center gap-3">
+                        <button type="button" class="bg-transparent border-0 position-relative">
+                            <i class="fa-solid fa-basket-shopping text-primary fs-4"></i>
+                        </button>
+                    </a>
+                    <button class="bg-transparent border-0">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="mx-auto d-xl-flex d-block align-items-center ">
+                        <ul class="navbar-nav gap-xl-5 mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active px-xl-4 px-3" href="delivery-payment.html">Доставка и оплата</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  px-xl-4 px-3" href="promo.html">Акции</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-xl-4 px-3" href="about.html">О компании</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-xl-4 px-3" href="contacts.html">Контакты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-xl-4 px-3" href="blog.html">Блог</a>
+                            </li>
+                        </ul>
+                        <div class="d-block d-xl-none align-items-center gap-3 mx-auto">
+                            <ul class="list-unstyled d-xl-flex align-items-center gap-3 mb-0">
+                                <li>
+                                    <a href="catalog.html" class="nav-link px-3 mb-3">
+                                        Бытовые кондиционеры
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="catalog.html" class="nav-link px-3 mb-3">
+                                        Промышленные кондиционеры
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="catalog.html" class="nav-link px-3 mb-3">
+                                        Мульти сплит системы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="catalog.html" class="nav-link px-3 mb-3">
+                                        Полупромышленные кондиционеры
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="mb-0 px-5 d-xl-block d-none nav-link"><i class="fa-regular fa-clock me-2"></i><span class="text-dust fw-normal">Ежедневно с 8:00 до 21:00</span></p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="border-bottom-corp d-xl-block d-none py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-3 col-lg-2">
+                        <a href="index.html">
+                            <img src="assets/icons/main/logo.svg" alt="" class="img-fluid logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="input-search-wrapper position-relative  h-100 d-flex align-items-center">
+                            <a href="#" class="position-absolute search-icon"><i class="fa-solid fa-magnifying-glass "></i></a>
+                            <input type="text" class="form-control w-100" placeholder="Поиск...">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="w-100 h-100 d-flex flex-column align-items-center">
+                            <a href="tel:+74951282601" class="fw-bold hover-custom-red">+7 (495) 128 26 01</a>
+                            <a href="contacts.html#form" class="text-primary hover-custom-red"><i class="bi bi-tablet me-1"></i>Обратный звонок</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="w-100 h-100 d-flex flex-column align-items-center">
+                            <a href="tel:+79344772373" class="fw-bold hover-custom-red">+7 (934) 477 23 73</a>
+                            <ul class="list-unstyled d-flex align-items-center gap-2">
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/icons/social/1.svg" alt="" class="img-fluid">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/icons/social/2.svg" alt="" class="img-fluid">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/icons/social/3.svg" alt="" class="img-fluid">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/icons/social/4.svg" alt="" class="img-fluid">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-lg-3">
+                        <div class="w-100 h-100 d-flex align-items-end">
+                            <a href="mailto:info@climatsistema.ru" class="text-primary hover-custom-red d-block mb-2">
+                                <i class="fa-regular fa-envelope me-1"></i>
+                                <span>info@climatsistema.ru</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-3 d-xl-block d-none">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="d-flex align-items-center gap-3 mx-auto">
+                        <ul class="list-unstyled d-flex align-items-center gap-3 mb-0">
+                            <li>
+                                <a href="catalog.html" class="nav-link">
+                                    Бытовые кондиционеры
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html" class="nav-link">
+                                    Промышленные кондиционеры
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html" class="nav-link">
+                                    Мульти сплит системы
+                                </a>
+                            </li>
+                            <li>
+                                <a href="catalog.html" class="nav-link">
+                                    Полупромышленные кондиционеры
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="basket.html" class="d-flex align-items-center gap-3">
+                            <button type="button" class="bg-transparent border-0 position-relative">
+                                <i class="fa-solid fa-basket-shopping text-primary fs-3"></i>
+                                <span class="position-absolute bottom-custom start-100 translate-middle badge rounded-pill bg-danger">
+                                    0
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </button>
+                            <span class="nav-link">Корзина</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Оплата и доставка</li>
+                    </ol>
+                </nav>
+                <h3 class="text-uppercase text-xl text-lg-start text-center ff-oswald fw-semibold mt-5 mb-lg-5 mb-3">Оплата и доставка</h3>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="lh-sm text-sm text-lg-start text-center">Оформить заказ у нас — легко и удобно. Специальные формы обратной связи и корзина на сайте позволяют быстро оставить заявку
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <h3 class="text-uppercase text-xl  text-center ff-oswald fw-semibold mt-5 mb-lg-5 mb-3">Доставка</h3>
+                <p class="text-sm text-center">осуществляется через транспортные компании</p>
+                <p class="text-md fw-semibold text-center">Наш менеджер подберет лучшую стоимость доставки, а также рассчитает окончательные сроки</p>
+                <div class="row gy-4 mt-lg-5 mt-4">
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 bg-main-2 rounded-4 p-sm-4 p-3">
+                            <img src="assets/icons/delivery-page/1.svg" alt="" class="img-fluid d-block mx-auto">
+                            <p class="text-center fw-semibold text-md mt-3 lh-sm">Отгрузка в течение 1 дня после оплаты</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 bg-main-2 rounded-4 p-sm-4 p-3">
+                            <img src="assets/icons/delivery-page/2.svg" alt="" class="img-fluid d-block mx-auto">
+                            <p class="text-center fw-semibold text-md mt-3 lh-sm">Доставка по Москве и МО 1-2 дня</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100 h-100 bg-main-2 rounded-4 p-sm-4 p-3">
+                            <img src="assets/icons/delivery-page/3.svg" alt="" class="img-fluid d-block mx-auto">
+                            <p class="text-center fw-semibold text-md mt-3 lh-sm">Самостоятельно стоимость доставки можно рассчитать на сайтах ТК </p>
+                            <div class="d-flex align-items-center text-xs justify-content-between gap-2">
+                                <a href="https://www.dellin.ru/" class="fw-light hover-custom-red">Деловые линии</a>
+                                <a href="https://pecom.ru/" class="fw-light hover-custom-red">ПЭК</a>
+                                <a href="https://www.jde.ru/" class="fw-light hover-custom-red">ЖелДокЭкспедиция</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <h3 class="text-uppercase text-xl  text-center ff-oswald fw-semibold mt-5 mb-lg-5 mb-3">Оплата</h3>
+                <p class="text-sm text-center">Для вашего удобства мы организовали разные виды оплаты: по карте, по счету (с НДС, без НДС)</p>
+
+                <div class="d-sm-flex d-block mt-4  align-items-center gap-3">
+                    <p class="text-md fw-semibold mb-0">К оплате принимаются платежные карты:</p>
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="assets/icons/delivery-page/4.svg" alt="" class="img-fluid">
+                        <img src="assets/icons/delivery-page/5.svg" alt="" class="img-fluid">
+                        <img src="assets/icons/delivery-page/6.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row gy-4 mt-lg-5 mt-4">
+                    <div class="col-lg-7">
+                        <div class="w-100">
+                            <div class="d-flex align-items-start gap-3 mb-4">
+                                <div class="rounded-circle bg-corp py-1 px-2 text-white fw-semibold text-md ff-oswald">01</div>
+                                <p class=" text-corp text-sm mb-0">При оформлении заказа в интернет-магазине выберите способ оплаты: банковской картой</p>
+                            </div>
+                            <div class="d-flex align-items-start gap-3 mb-4">
+                                <div class="rounded-circle bg-corp py-1 px-2 text-white fw-semibold text-md ff-oswald">02</div>
+                                <p class=" text-corp text-sm mb-0">При оплате заказа банковской картой, обработка платежа происходит на странице платежного провайдера PAYMO, где Вам необходимо ввести
+                                    данные Вашей банковской карты</p>
+                            </div>
+                            <div class="d-flex align-items-start gap-3 mb-4">
+                                <div class="rounded-circle bg-corp py-1 px-2 text-white fw-semibold text-md ff-oswald">03</div>
+                                <p class=" text-corp text-sm mb-0">Номер карты</p>
+                            </div>
+                            <div class="d-flex align-items-start gap-3 mb-4">
+                                <div class="rounded-circle bg-corp py-1 px-2 text-white fw-semibold text-md ff-oswald">04</div>
+                                <p class=" text-corp text-sm mb-0">Срок действия</p>
+                            </div>
+                            <div class="d-flex align-items-start gap-3 mb-4">
+                                <div class="rounded-circle bg-corp py-1 px-2 text-white fw-semibold text-md ff-oswald">05</div>
+                                <p class=" text-corp text-sm mb-0">CVC2/CVV2 код</p>
+                            </div>
+                            <div class="d-flex align-items-start gap-3 mb-4">
+                                <div class="rounded-circle bg-corp py-1 px-2 text-white fw-semibold text-md ff-oswald">06</div>
+                                <p class=" text-corp text-sm mb-0">Для подтверждения операции необходимо ввести код из SMS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="w-100 h-100 d-flex align-items-end">
+                            <img src="assets/images/delivery-page/1.png" alt="" class="img-fluid rounded-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <h3 class="text-uppercase text-xl  text-center ff-oswald fw-semibold mt-5 mb-lg-5 mb-3">Возврат товара</h3>
+                <p class="text-sm text-center">Процедура возврата товара регламентируется статьей 26.1 федерального закона <br> «О защите прав потребителей»</p>
+                <div class="row gy-4 mt-lg-5 mt-4">
+                    <div class="col-lg-5">
+                        <div class="w-100 h-100 d-flex align-items-center">
+                            <img src="assets/images/delivery-page/2.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="w-100 h-100 ps-lg-5 d-flex align-items-center">
+                            <div class="">
+                                <div class="d-flex align-items-start gap-3 mb-4">
+                                    <i class="fa-solid fa-circle-check fs-2 text-corp"></i>
+                                    <p class=" text-sm mb-0">Потребитель вправе отказаться от товара в любое время до его передачи, а после передачи товара - в течение семи дней</p>
+                                </div>
+                                <div class="d-flex align-items-start gap-3 mb-4">
+                                    <i class="fa-solid fa-circle-check fs-2 text-corp"></i>
+                                    <p class=" text-sm mb-0">Возврат товара надлежащего качества возможен в случае, если сохранены его товарный вид, потребительские свойства, а также документ,
+                                        подтверждающий факт и условия покупки указанного товара</p>
+                                </div>
+                                <div class="d-flex align-items-start gap-3 mb-4">
+                                    <i class="fa-solid fa-circle-check fs-2 text-corp"></i>
+                                    <p class=" text-sm mb-0">Потребитель не вправе отказаться от товара надлежащего качества, имеющего индивидуально-определенные свойства, если указанный товар
+                                        может быть использован исключительно приобретающим его человеком</p>
+                                </div>
+                                <div class="d-flex align-items-start gap-3">
+                                    <i class="fa-solid fa-circle-check fs-2 text-corp"></i>
+                                    <p class=" text-sm mb-0">При отказе потребителя от товара продавец должен возвратить ему денежную сумму, уплаченную потребителем по договору, за исключением
+                                        расходов продавца на доставку от потребителя возвращенного товара,
+                                        не позднее чем через десять дней со дня предъявления потребителем соответствующего требования</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <h3 class="text-uppercase text-xl  text-center ff-oswald fw-semibold mt-5 mb-lg-5 mb-3">Отказ от услуги</h3>
+                <p class="text-sm text-center">Право потребителя на расторжение договора об оказании услуги регламентируется статьей 32 <br> федерального закона «О защите прав потребителей»
+                </p>
+                <div class="row gy-4 mt-lg-5 mt-4">
+
+                    <div class="col-lg-7">
+                        <div class="w-100 h-100">
+                            <div class=" ps-lg-5 d-flex align-items-center">
+                                <div class="">
+                                    <div class="d-flex align-items-start gap-3 mb-4">
+                                        <i class="fa-solid fa-circle-check fs-2 text-corp"></i>
+                                        <p class=" text-sm mb-0">Потребитель вправе расторгнуть договор об оказании услуги в любое время, уплатив исполнителю часть цены пропорционально части оказанной
+                                            услуги до получения извещения о расторжении указанного договора
+                                            и возместив исполнителю расходы, произведенные им до этого момента в целях исполнения договора, если они не входят в указанную часть цены услуги</p>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-3 mb-4">
+                                        <i class="fa-solid fa-circle-check fs-2 text-corp"></i>
+                                        <p class=" text-sm mb-0">Потребитель при обнаружении недостатков оказанной услуги вправе по своему выбору потребовать</p>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-3 mb-4">
+                                        <i class="fa-solid fa-circle-check fs-2 text-corp"></i>
+                                        <p class=" text-sm mb-0">Безвозмездного устранения недостатков</p>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-3 mb-4">
+                                        <i class="fa-solid fa-circle-check fs-2 text-corp"></i>
+                                        <p class=" text-sm mb-0">Соответствующего уменьшения цены</p>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-3 mb-4">
+                                        <i class="fa-solid fa-circle-check fs-2 text-corp"></i>
+                                        <p class=" text-sm mb-0">Возмещения понесенных им расходов по устранению недостатков своими силами или третьими лицами</p>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-3 mb-4">
+                                        <i class="fa-solid fa-circle-check fs-2 text-corp"></i>
+                                        <p class=" text-sm mb-0">Потребитель вправе предъявлять требования, связанные с недостатками оказанной услуги, если они обнаружены в течение гарантийного срока,
+                                            а
+                                            при его отсутствии в разумный срок, в пределах двух лет со дня
+                                            принятия оказанной услуги</p>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-3">
+                                        <i class="fa-solid fa-circle-check fs-2 text-corp"></i>
+                                        <p class=" text-sm mb-0">Исполнитель отвечает за недостатки услуги, на которую не установлен гарантийный срок, если потребитель докажет, что они возникли до ее
+                                            принятия им или по причинам, возникшим до этого момента</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-dirt lh-sm mt-4 text-lg-start text-center"><span class="opacity-75 text-black fw-bold ">Примечание:</span> в случае приема к оплате пластиковой карты,
+                                средства должны быть возвращены
+                                только на
+                                ту же
+                                пластиковую
+                                карту,
+                                по которой была
+                                произведена оплата товаров/ услуг</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="w-100 h-100 d-flex align-items-center">
+                            <img src="assets/images/delivery-page/3.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- form -->
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <div class="bg-main p-lg-5 p-4 rounded-4">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="w-100">
+                                    <h3 class="text-uppercase text-xl ff-oswald fw-semibold  text-lg-start text-center">Остались вопросы?</h3>
+                                    <p class="my-sm-4 my-3 text-lg-start text-center">Оставьте ваш номер - мы вам перезвоним</p>
+                                    <div class="form-check brand-check d-lg-block d-none">
+                                        <input class="form-check-input" type="checkbox" name="brand[]" value="AUX" id="brand-aux">
+                                        <label class="form-check-label text-dirt text-xs" for="brand-aux">Я даю согласие на обработку персональных данных в соответствии с Федеральным законом</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="w-100">
+                                    <input type="text" class="form-control mb-3" placeholder="Имя*">
+                                    <input type="tel" class="form-control" placeholder="+7(___)__-_-_*">
+                                    <button type="submit" class="border-0 btn-primary py-3 w-100 mt-3 rounded-3">Получить консультацию</button>
+                                    <div class="form-check brand-check mt-3 d-lg-none d-block">
+                                        <input class="form-check-input" type="checkbox" name="brand[]" value="AUX" id="brand-aux">
+                                        <label class="form-check-label text-dirt text-xs" for="brand-aux">Я даю согласие на обработку персональных данных в соответствии с Федеральным законом</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-3 text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <div class="w-100 py-4">
+                        <div class="row gy-4 w-100">
+                            <div class="col-lg-3">
+                                <div class="w-100 h-100">
+                                    <img src="assets/icons/main/footer-logo.svg" alt="" class="img-fluid">
+                                    <p class="text-sm text-dirt my-2 lh-sm">Продажа и установка
+                                        сплит-систем</p>
+                                    <a href="#" class="bg-white footer-btn  px-3 py-sm-3 py-2 fw-semibold rounded-4 my-3 d-block w-fit-content text-black text-sm">Обратный звонок</a>
+                                    <img src="assets/icons/main/payment.svg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="w-100 h-100 ">
+                                    <p class="text-uppercase fw-semibold text-lg ff-oswald text-dirt">Каталог</p>
+                                    <ul class="list-unstyled text-sm fw-semibold">
+                                        <li class="mb-2">
+                                            <a href="catalog.html" class="footer-link">Бытовые кондиционеры</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="catalog.html" class="footer-link">Промышленные
+                                                кондиционеры</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="catalog.html" class="footer-link">Мульти сплинг системы</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html" class="footer-link">Полупромышленные
+                                                кондиционеры</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="w-100 h-100 ">
+                                    <p class="text-uppercase fw-semibold text-lg ff-oswald text-dirt">Навигация</p>
+                                    <ul class="list-unstyled text-sm fw-semibold">
+                                        <li class="mb-2">
+                                            <a href="about.html" class="footer-link">О комапнии</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="contacts.html" class="footer-link">Контакты</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="footer-link">Акции</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="footer-link">Доставка и оплата</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="blog.html" class="footer-link">Блог</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="footer-link">Карта сайта</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="w-100 h-100 ">
+                                    <p class="text-uppercase fw-semibold text-lg ff-oswald text-dirt">Контакты</p>
+                                    <ul class="list-unstyled text-sm fw-semibold">
+                                        <li class="mb-2">
+                                            <a href="tel:+74951282601" class="footer-link d-flex align-items-center gap-2"><i class="bi bi-tablet"></i>+7 (495) 128 26 01</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="mailto:info@climatsistema.ru" class="footer-link d-flex align-items-center gap-2"><i class="bi bi-envelope"></i>info@climatsistema.ru</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="footer-link d-flex gap-2"><i class="bi bi-geo-alt"></i>123112, Москва, наб.
+                                                Пресненская, д. 12,
+                                                помещ. 10/45</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <p class="footer-link d-flex align-items-center gap-2"><i class="bi bi-clock"></i>Ежедневно с 8:00 до
+                                                21:00</p>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="tel:+74951282601" class="footer-link d-flex align-items-center gap-2">
+                                                <img src="assets/icons/social/5.svg" alt="">
+                                                <img src="assets/icons/social/6.svg" alt="">
+                                                <img src="assets/icons/social/7.svg" alt="">
+                                                +7 (934) 477 23 73</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-dirt text-center my-3 text-sm">©2004-2025 ООО “Интек”. Все права защищены</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.6.0/jquery.marquee.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab16f4767e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@15.8.1/dist/nouislider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/wnumb@1.2.0/wNumb.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>

@@ -174,9 +174,9 @@
                         <a href="basket.html" class="d-flex align-items-center gap-3">
                             <button type="button" class="bg-transparent border-0 position-relative">
                                 <i class="fa-solid fa-basket-shopping text-primary fs-3"></i>
-                                <span class="position-absolute bottom-custom start-100 translate-middle badge rounded-pill bg-danger">
+                                <span class="position-absolute bottom-custom start-100 translate-middle badge rounded-pill bg-danger js-cart-count">
                                     0
-                                    <span class="visually-hidden">unread messages</span>
+                                    <span class="visually-hidden">товаров в корзине</span>
                                 </span>
                             </button>
                             <span class="nav-link">Корзина</span>
@@ -234,7 +234,8 @@
                             <p class="my-lg-4 my-3 text-green"><i class="bi bi-check-circle me-3  fs-5"></i>Есть в наличии</p>
                             <div class="row">
                                 <div class="col-6">
-                                    <button class="d-block  text-xs py-3 w-100 rounded-3 btn-outline-blue">Добавить в корзину</button>
+                                    <button type="button" data-id="sku-123" data-name="AUX ASW-HO7B4/FJ-BR1" data-price="59090" data-image="assets/images/catalog/2.png"
+                                        class="d-block  text-xs py-3 w-100 rounded-3 btn-outline-blue">Добавить в корзину</button>
                                 </div>
                                 <div class="col-6">
                                     <a href="#" class="d-block text-center text-xs py-3 w-100 rounded-3 btn-primary">Перейти к оформлению</a>
@@ -720,7 +721,7 @@
     <script src="https://cdn.jsdelivr.net/npm/nouislider@15.8.1/dist/nouislider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/wnumb@1.2.0/wNumb.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="assets/scripts/main.js"></script>
+    <script type="module" src="assets/scripts/app/index.js"></script>
 </body>
 
 </html>

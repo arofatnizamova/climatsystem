@@ -174,9 +174,9 @@
                         <a href="basket.html" class="d-flex align-items-center gap-3">
                             <button type="button" class="bg-transparent border-0 position-relative">
                                 <i class="fa-solid fa-basket-shopping text-primary fs-3"></i>
-                                <span class="position-absolute bottom-custom start-100 translate-middle badge rounded-pill bg-danger">
+                                <span class="position-absolute bottom-custom start-100 translate-middle badge rounded-pill bg-danger js-cart-count">
                                     0
-                                    <span class="visually-hidden">unread messages</span>
+                                    <span class="visually-hidden">товаров в корзине</span>
                                 </span>
                             </button>
                             <span class="nav-link">Корзина</span>
@@ -195,114 +195,39 @@
                         <li class="breadcrumb-item active" aria-current="page">Корзина</li>
                     </ol>
                 </nav>
-                <h3 class="text-uppercase text-xl text-lg-start text-center ff-oswald fw-semibold my-5">Корзина</h3>
+                <div class="d-flex align-items-center gap-4">
+                    <h3 class="text-uppercase text-xl text-lg-start text-center ff-oswald fw-semibold my-5">Корзина</h3>
+                    <button class="btn-primary border-0 rounded-3 py-2 js-cart-delete-selected" disabled>
+                        <i class="fa-solid fa-trash me-2"></i>Удалить выбранное
+                    </button>
+                </div>
+
                 <div class="row gy-4">
                     <div class="col-xl-9">
-                        <div class="w-100">
-                            <div class="row gy-4">
-                                <div class="col-lg-3 col-6 order-1">
-                                    <img src="assets/images/catalog/2.png" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-lg-3 col-6 order-2">
-                                    <div class="w-100 text-center">
-                                        <p class="mb-sm-4 mb-0">Название</p>
-                                        <a href="product-item.html" class="fw-semibold hover-custom-red ff-oswald text-corp text-md">AUX ASW-HO7B4/FJ-BR1</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 order-lg-3 order-4">
-                                    <div class="w-100 d-flex flex-lg-column align-items-center text-center">
-                                        <p class="mb-lg-4 mb-0 me-lg-0 me-4">Кол-во</p>
-                                        <div class="number-input">
-                                            <button class="plus">+</button>
-                                            <input type="number" value="1" min="1" max="99">
-                                            <button class="minus">−</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 order-lg-4 order-3">
-                                    <div class="w-100 d-flex flex-lg-column align-items-center text-center">
-                                        <p class="mb-lg-4 mb-0 me-lg-0 me-4">Цена</p>
-                                        <p class="mb-0 text-md fw-semibold ff-oswald">27 700 руб.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="light-line">
-                            <div class="row gy-4">
-                                <div class="col-lg-3 col-6 order-1">
-                                    <img src="assets/images/catalog/2.png" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-lg-3 col-6 order-2">
-                                    <div class="w-100 text-center">
-                                        <p class="mb-sm-4 mb-0">Название</p>
-                                        <a href="product-item.html" class="fw-semibold hover-custom-red ff-oswald text-corp text-md">AUX ASW-HO7B4/FJ-BR1</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 order-lg-3 order-4">
-                                    <div class="w-100 d-flex flex-lg-column align-items-center text-center">
-                                        <p class="mb-lg-4 mb-0 me-lg-0 me-4">Кол-во</p>
-                                        <div class="number-input">
-                                            <button class="plus">+</button>
-                                            <input type="number" value="1" min="1" max="99">
-                                            <button class="minus">−</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 order-lg-4 order-3">
-                                    <div class="w-100 d-flex flex-lg-column align-items-center text-center">
-                                        <p class="mb-lg-4 mb-0 me-lg-0 me-4">Цена</p>
-                                        <p class="mb-0 text-md fw-semibold ff-oswald">27 700 руб.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="light-line">
-                            <div class="row gy-4">
-                                <div class="col-lg-3 col-6 order-1">
-                                    <img src="assets/images/catalog/2.png" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-lg-3 col-6 order-2">
-                                    <div class="w-100 text-center">
-                                        <p class="mb-sm-4 mb-0">Название</p>
-                                        <a href="product-item.html" class="fw-semibold hover-custom-red ff-oswald text-corp text-md">AUX ASW-HO7B4/FJ-BR1</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 order-lg-3 order-4">
-                                    <div class="w-100 d-flex flex-lg-column align-items-center text-center">
-                                        <p class="mb-lg-4 mb-0 me-lg-0 me-4">Кол-во</p>
-                                        <div class="number-input">
-                                            <button class="plus">+</button>
-                                            <input type="number" value="1" min="1" max="99">
-                                            <button class="minus">−</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 order-lg-4 order-3">
-                                    <div class="w-100 d-flex flex-lg-column align-items-center text-center">
-                                        <p class="mb-lg-4 mb-0 me-lg-0 me-4">Цена</p>
-                                        <p class="mb-0 text-md fw-semibold ff-oswald">27 700 руб.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="light-line">
-                        </div>
+                        <!-- Сюда скрипт сгенерирует товарные карточки -->
+                        <div class="w-100 js-cart-list"></div>
                     </div>
+
                     <div class="col-xl-3 col-md-6">
                         <div class="w-100">
                             <div class="bg-main-2 px-3 py-4 rounded-3">
                                 <p class="ff-oswald fw-semibold text-lg">Ваш заказ</p>
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <p>6 товаров</p>
-                                    <p>166 200 руб.</p>
+                                    <p>0 товаров</p>
+                                    <p>0 руб.</p>
                                 </div>
                                 <hr class="light-line">
                                 <div class="d-flex justify-content-between">
                                     <p class="ff-oswald fw-semibold text-lg">Итого:</p>
-                                    <div class="">
-                                        <p class="ff-oswald fw-semibold text-lg">166 200 руб.</p>
+                                    <div>
+                                        <p class="ff-oswald fw-semibold text-lg">0 руб.</p>
                                         <p>Без учета доставки</p>
                                     </div>
                                 </div>
                             </div>
-                            <a href="payment.html" class="btn-primary mt-3 d-block rounded-3 py-2  text-center">Перейти к оформлению</a>
+                            <a href="payment.html" class="btn-primary mt-3 d-block rounded-3 py-2 text-center">
+                                Перейти к оформлению
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -417,7 +342,7 @@
     <script src="https://cdn.jsdelivr.net/npm/wnumb@1.2.0/wNumb.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="assets/scripts/main.js"></script>
+    <script type="module" src="assets/scripts/app/index.js"></script>
 </body>
 
 </html>
